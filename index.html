@@ -511,11 +511,49 @@
           <b class="label">подпишитесь на рассылку</b>
           <form class="mailing-form">
             <input type="email" placeholder="E-mail" />
-            <button class="button">Подписаться</button>
+            <button class="button" type="submit">
+              Подписаться
+            </button>
+            <svg width="24" height="24">
+              <use href="./images/sprite.svg#icon-send-ikon"></use>
+            </svg>
           </form>
         </div>
       </div>
       <p class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
+
+    <!--Модальне вікно з формою-->
+    <b>Оставьте свои данные, мы вам перезвоним</b>
+
+    <form class="connection-form">
+      <div class="form-field">
+        <label for="name">Имя</label>
+        <input type="text" name="user-name" id="name" />
+      </div>
+
+      <div class="form-field">
+        <label for="tel">Телефон</label>
+        <input type="tel" name="user-tel" id="tel" />
+      </div>
+
+      <div class="form-field">
+        <label for="mail">Почта</label>
+        <input type="email" name="user-mail" id="mail" />
+      </div>
+
+      <div class="form-field">
+        <label for="comment">Комментарий</label>
+        <textarea name="comment" class="textarea" id="comment"></textarea>
+      </div>
+
+      <div class="form-field">
+        <input type="checkbox" name="policy" id="policy" />
+        <label
+          >Соглашаюсь с рассылкой и принимаю
+          <a class="link">Условия договора</a></label
+        >
+      </div>
+    </form>
   </body>
 </html>
