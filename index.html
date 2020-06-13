@@ -524,36 +524,41 @@
     </footer>
 
     <!--Модальне вікно з формою-->
-    <b>Оставьте свои данные, мы вам перезвоним</b>
+    <div class="backdrop" data-backdrop>
+      <div class="modal">
+        <form class="connection-form">
+          <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" name="user-name" id="name" />
+          </div>
 
-    <form class="connection-form">
-      <div class="form-field">
-        <label for="name">Имя</label>
-        <input type="text" name="user-name" id="name" />
-      </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="user-tel" id="tel" />
+          </div>
 
-      <div class="form-field">
-        <label for="tel">Телефон</label>
-        <input type="tel" name="user-tel" id="tel" />
-      </div>
+          <div class="form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="user-mail" id="mail" />
+          </div>
 
-      <div class="form-field">
-        <label for="mail">Почта</label>
-        <input type="email" name="user-mail" id="mail" />
-      </div>
+          <div class="form-field">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" class="textarea" id="comment"></textarea>
+          </div>
 
-      <div class="form-field">
-        <label for="comment">Комментарий</label>
-        <textarea name="comment" class="textarea" id="comment"></textarea>
-      </div>
+          <div class="form-field">
+            <input type="checkbox" name="policy" id="policy" />
+            <label
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="link">Условия договора</a></label
+            >
+          </div>
 
-      <div class="form-field">
-        <input type="checkbox" name="policy" id="policy" />
-        <label
-          >Соглашаюсь с рассылкой и принимаю
-          <a class="link">Условия договора</a></label
-        >
+          <button class="button" type="submit">Отправить</button>
+        </form>
       </div>
-    </form>
+    </div>
   </body>
 </html>
