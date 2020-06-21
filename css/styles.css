@@ -576,6 +576,7 @@ img {
 
   font-size: 16px;
   line-height: 1.25;
+  color: var(--primary-white-color);
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: var(--accent-color);
@@ -876,6 +877,7 @@ img {
 
 .checkbox-icon {
   display: inline-block;
+  vertical-align: middle;
   width: 15px;
   height: 15px;
   margin-right: 8px;
@@ -939,6 +941,7 @@ img {
 
   background-color: var(--primary-white-color);
   border: none;
+  outline: none;
 
   border-radius: 50%;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
